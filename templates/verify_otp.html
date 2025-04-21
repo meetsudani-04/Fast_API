@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify OTP</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Verify OTP</h1>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+        <p>Enter the OTP sent to {{ email }}</p>
+        <form method="post">
+            <input type="hidden" name="email" value="{{ email }}">
+            <label for="otp">OTP:</label>
+            <input type="text" id="otp" name="otp" required>
+            <button type="submit">Verify OTP</button>
+        </form>
+        <p><a href="/forgot-password">Request a new OTP</a></p>
+        <p><a href="/login">Back to Login</a></p>
+    </div>
+</body>
+</html>

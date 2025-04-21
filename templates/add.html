@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 CRUD</title>
+    <link href="{{ url_for('static', path='/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Bootstrap 5 CRUD Template</h2>
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add New Record</h5>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="name" class="form-control mb-2" placeholder="Enter Name">
+                    <input type="email" id="email" class="form-control" placeholder="Enter Email">
+                </div>
+                <br>
+                <div class="modal-footer">
+                    <button class="btn btn-success">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Modal -->
+
+
+</body>
+
+</html>
